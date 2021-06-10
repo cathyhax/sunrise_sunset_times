@@ -1,4 +1,6 @@
 /*********** API Calls **************/
+
+/* https://sunrise-sunset.org/api*/
 const SUNRISE_SUNSET_BASE_URL = 'https://api.sunrise-sunset.org/json?'
 
 function getSunriseSunsetData(lat, lon) {
@@ -15,6 +17,7 @@ function getSunriseSunsetData(lat, lon) {
     })
 }
 
+/*https://openweathermap.org/current*/
 const WEATHER_BASE_URL = 'https://api.openweathermap.org/data/2.5/weather?'
 
 function getWeather(lat, lon) {
@@ -34,6 +37,7 @@ function getWeather(lat, lon) {
     })
 }
 
+/*https://nominatim.org/release-docs/develop/api/Search/*/
 const ADDRESS_SEARCH_BASE_URL = 'https://nominatim.openstreetmap.org/search?'
 
 function addressSearch(v) {
