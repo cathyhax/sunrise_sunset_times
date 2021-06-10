@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Sunset App</title>
+    <link rel="icon" href="static/favicon.ico"/>
+    <link rel="stylesheet" href="static/style.css">
+    <link 
+        rel="stylesheet" 
+        href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+        integrity="undefined" 
+        crossorigin="anonymous">
+</head>
+
+<body>    
+    <div class="app-container">
+        <div class="city-input">
+            <div class="dropdown">
+                <input
+                    id="address-input"
+                    class="form-control form-control-lg" 
+                    placeholder="Address Search"
+                    onfocus="focusIt()" 
+                    onChange="changed(event)">
+                <ul 
+                    id="search-dropdown"
+                    class="dropdown-menu">
+                </ul>
+            </div>
+        </div>
+        <div id="map" onClick="blurIt()">
+        </div>
+    </div>
+    
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" 
+        integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    <script src="static/script.js"></script>
+</body>
+</html>

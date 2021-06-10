@@ -1,0 +1,60 @@
+html, body, #map, .app-container {
+    height: 100%;
+    width: 100%;
+}
+
+.app-container {
+    position: relative;
+}
+
+.city-input {
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    z-index: 500;
+}
+
+.popup {
+    font-size: 16px;
+}
+
+.row-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.stat {
+    min-width: 50%;
+    white-space: nowrap;
+}
+
+.stat:first-child {
+    margin-right: 15px;
+}
+
+.stat__header {
+    font-weight: bold;
+    color: #bbb
+}
+
+.stat__number {
+    font-size: 20px;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.weather__icon {
+    margin-top: -15px;
+    margin-bottom: -5px;
+}
+
+.weather__desc {
+    color: #aaa;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
